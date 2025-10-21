@@ -1,0 +1,54 @@
+:root {
+  --label-color: #1f2937;
+  --input-bg: #f9fafb;
+  --input-text: #111827;
+  --input-border: #6b7280;
+  --input-focus: #2563eb;
+  --btn-bg: #2563eb;
+  --btn-hover: #1d4ed8;
+  --btn-text: #ffffff;
+  --btn-success: green;
+}
+
+/* Labels */
+.label-color {
+  color: var(--label-color);
+}
+
+/* Inputs */
+.input-color {
+  color: var(--input-text);
+  background-color: var(--input-bg);
+  border-color: var(--input-border);
+}
+.input-color:focus {
+  border-color: var(--input-focus);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+/* Button */
+.btn-color {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+}
+.btn-color:hover {
+  background-color: var(--btn-hover);
+}
+
+/* Theatre Chairs */
+.theatreChairs {
+  color: var(--input-border);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.theatreChairs:hover {
+  color: var(--input-focus);
+  transform: scale(1.1);
+}
+.theatreScreen {
+  color: var(--input-border);
+}
+button[data-btn="save"] {
+  background-color: var(--btn-success);
+  color: var(--input-bg);
+}

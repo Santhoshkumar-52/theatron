@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import RouterLayout from "./RouterLayout/RouterLayout";
 import ProtectedRoute from "./RouterLayout/ProtectedRoute";
+import AddNewScreen from "./Pages/AddNewScreen";
 
 function App() {
   const router = createBrowserRouter(
@@ -29,6 +30,7 @@ function App() {
           <Route index element={<Dashboard />} />
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="settings" element={<Settings />} />
+          <Route path="newscreen" element={<AddNewScreen />} />
         </Route>
       </>
     )

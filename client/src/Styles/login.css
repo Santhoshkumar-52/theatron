@@ -1,0 +1,63 @@
+:root {
+  --login-left-bg: #2b0000;          /* Deep theatre curtain maroon */
+  --login-left-text: #f5d77a;        /* Warm gold text */
+  --login-right-bg: #1a1a1a;         /* Deep black-gray for contrast */
+  --form-bg: #2e2e2e;                /* Subtle dark form background */
+  --form-border: #4a2f2f;            /* Soft maroon border for form */
+  --form-text: #f2f2f2;              /* Light text */
+  --btn-bg: #b71c1c;                 /* Rich red button */
+  --btn-text: #fff7e6;               /* Soft ivory text */
+  --btn-hover-bg: #d32f2f;           /* Brighter hover red */
+  --theme: #b71c1c;                  /* Used for focus ring and accents */
+}
+
+/* Tailwind custom ring color usage */
+:root {
+  --tw-ring-color: var(--theme);
+}
+
+/* Page Background Split */
+.login-container {
+  background: linear-gradient(to right, var(--login-left-bg), var(--login-right-bg));
+}
+
+/* Left Section (Logo / Branding Area) */
+.login-left {
+  background-color: var(--login-left-bg);
+  color: var(--login-left-text);
+}
+
+/* Right Section (Form Area) */
+.login-right {
+  background-color: var(--login-right-bg);
+}
+
+/* Input & Button */
+.login-form {
+  background-color: var(--form-bg);
+  color: var(--form-text);
+  border: 1px solid var(--form-border);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.login-btn {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: var(--btn-hover-bg);
+  transform: translateY(-2px);
+}
+
+/* =======================
+   💡 Theatre Theme Colors
+   ======================= */
+
+
+/* Optional: Input focus glow to match the theme */
+input:focus {
+  box-shadow: 0 0 6px var(--theme);
+  border-color: var(--theme);
+}

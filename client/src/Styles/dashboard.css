@@ -1,0 +1,34 @@
+section[data-dashboardcard]{
+    color: whitesmoke;
+    border-color:gainsboro;
+    transition: 1s;
+}
+section[data-dashboardcard]:hover{
+    background-color: rgb(53, 53, 53);
+    cursor: pointer;
+     transform: scaleX(1.03);
+}
+section[data-dashboardcard="1"]{
+    background-color: red;
+}
+section[data-dashboardcard="2"]{
+    background-color: green;
+}
+section[data-dashboardcard="3"]{
+    background-color: blue;
+}
+section[data-dashboardcard="4"]{
+    background-color: purple;
+}
+section[data-dashboardcard="5"]{
+    background-color: #191970;
+}
+section[data-dashboardcard="6"]{
+    background-color: #3B3F0B;
+}
+section[data-dashboardcard="7"]{
+    background-color: #4A0F2B;
+}
+section[data-dashboardcard="8"]{
+    background-color: #064E40;
+}

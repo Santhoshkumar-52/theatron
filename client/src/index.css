@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+.screenheading{
+    @apply lg:text-2xl text-xl text-neutral-500 font-bold border-b-2 border-gray-500 p-2
+}
+.footer{
+    @apply bg-white w-screen text-neutral-500 
+}
+
+::-webkit-scrollbar{
+    background-color: #1f1f1f;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #5e5e5e;
+}
